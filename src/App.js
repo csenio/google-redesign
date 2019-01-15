@@ -1,12 +1,26 @@
 import React, { Component } from "react";
 import Loader from "./components/Loader";
 import "./app.css";
+import Nav from "./components/Nav";
+import AppMenu from "./components/AppMenu";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { textareaSelected: false, search: "" };
+    this.state = {
+      textareaSelected: false,
+      search: "",
+      animation: "wave",
+      appmenuIsOpen: false
+    };
   }
+
+  closeAppMenu = () => {
+    this.setState({ appmenuIsOpen: false });
+  };
+  openAppMenu = () => {
+    this.setState({ appmenuIsOpen: true });
+  };
 
   handlefocus = () => {
     this.setState({ textareaSelected: true });
@@ -22,16 +36,32 @@ class App extends Component {
 
   search = () => {
     this.setState({ search: "searching" });
+    this.setState({ animation: "loading" });
   };
 
   render() {
-    var { state, handleInputChange, handleblur, handlefocus, search } = this;
+    var {
+      state,
+      handleInputChange,
+      handleblur,
+      handlefocus,
+      search,
+      closeAppMenu,
+      openAppMenu
+    } = this;
     return (
       <div className="App">
-        <div className={`midsection ${this.state.search}`}>
+        {state.appmenuIsOpen && (
+          <AppMenu closeAppMenu={closeAppMenu} openAppMenu={openAppMenu} />
+        )}
+        <Nav openAppMenu={openAppMenu} />
+        <div className={`midsection ${state.search}`}>
           <div className="midsection__title">
             <Title hidden={state.textareaSelected} />
-            <Loader animation="wave" hidden={!state.textareaSelected} />
+            <Loader
+              animation={state.animation}
+              hidden={!state.textareaSelected}
+            />
           </div>
           <input
             type="text"
