@@ -5,34 +5,54 @@ import "./app.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      textareaSelected: false
-    };
+    this.state = { textareaSelected: false, search: "" };
   }
 
   handlefocus = () => {
     this.setState({ textareaSelected: true });
   };
-  handleblur = () => {
-    this.setState({ textareaSelected: false });
+  handleblur = e => {
+    // console.log("blur", !!e.target.value);
+    if (!e.target.value) this.setState({ textareaSelected: false });
+  };
+
+  handleInputChange = e => {
+    this.setState({ query: e.target.value });
+  };
+
+  search = () => {
+    this.setState({ search: "searching" });
   };
 
   render() {
+    var { state, handleInputChange, handleblur, handlefocus, search } = this;
     return (
       <div className="App">
-        <div className="midsection">
+        <div className={`midsection ${this.state.search}`}>
           <div className="midsection__title">
-            <Title hidden={this.state.textareaSelected} />
-            <Loader animation="wave" hidden={!this.state.textareaSelected} />
+            <Title hidden={state.textareaSelected} />
+            <Loader animation="wave" hidden={!state.textareaSelected} />
           </div>
           <input
             type="text"
             className="searchbar"
-            onFocus={this.handlefocus}
-            onBlur={this.handleblur}
+            onFocus={handlefocus}
+            onBlur={e => {
+              handleblur(e);
+            }}
             placeholder="search"
+            onChange={e => {
+              handleInputChange(e);
+            }}
           />
-          <button className="search__button">Search</button>
+          <button
+            className="search__button"
+            onClick={() => {
+              state.query && search();
+            }}
+          >
+            Search
+          </button>
         </div>
       </div>
     );
