@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "%20//jescowuester.github.io/google-redesign/precache-manifest.c93ec04f20f7ddbb6df5330a8d79ab63.js"
+  "/google-redesign/precache-manifest.5579a1b9b56c57f5bd6e2f6f1519074b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("%20//jescowuester.github.io/google-redesign/index.html", {
+workbox.routing.registerNavigationRoute("/google-redesign/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

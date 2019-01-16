@@ -1,14 +1,14 @@
 {
-  "main.css": "%20//jescowuester.github.io/google-redesign/static/css/main.92ec80d1.chunk.css",
-  "main.js": "%20//jescowuester.github.io/google-redesign/static/js/main.84a37bdc.chunk.js",
-  "main.js.map": "%20//jescowuester.github.io/google-redesign/static/js/main.84a37bdc.chunk.js.map",
-  "static/js/1.f03e8ae8.chunk.js": "%20//jescowuester.github.io/google-redesign/static/js/1.f03e8ae8.chunk.js",
-  "static/js/1.f03e8ae8.chunk.js.map": "%20//jescowuester.github.io/google-redesign/static/js/1.f03e8ae8.chunk.js.map",
-  "runtime~main.js": "%20//jescowuester.github.io/google-redesign/static/js/runtime~main.1807f3f3.js",
-  "runtime~main.js.map": "%20//jescowuester.github.io/google-redesign/static/js/runtime~main.1807f3f3.js.map",
-  "static/media/app.css": "%20//jescowuester.github.io/google-redesign/static/media/Product Sans Regular.eae9c18c.ttf",
-  "static/css/main.92ec80d1.chunk.css.map": "%20//jescowuester.github.io/google-redesign/static/css/main.92ec80d1.chunk.css.map",
-  "index.html": "%20//jescowuester.github.io/google-redesign/index.html",
-  "precache-manifest.c93ec04f20f7ddbb6df5330a8d79ab63.js": "%20//jescowuester.github.io/google-redesign/precache-manifest.c93ec04f20f7ddbb6df5330a8d79ab63.js",
-  "service-worker.js": "%20//jescowuester.github.io/google-redesign/service-worker.js"
+  "main.css": "/google-redesign/static/css/main.a76d42b3.chunk.css",
+  "main.js": "/google-redesign/static/js/main.44d4ff8b.chunk.js",
+  "main.js.map": "/google-redesign/static/js/main.44d4ff8b.chunk.js.map",
+  "static/js/1.f03e8ae8.chunk.js": "/google-redesign/static/js/1.f03e8ae8.chunk.js",
+  "static/js/1.f03e8ae8.chunk.js.map": "/google-redesign/static/js/1.f03e8ae8.chunk.js.map",
+  "runtime~main.js": "/google-redesign/static/js/runtime~main.247a4143.js",
+  "runtime~main.js.map": "/google-redesign/static/js/runtime~main.247a4143.js.map",
+  "static/media/app.css": "/google-redesign/static/media/Product Sans Regular.eae9c18c.ttf",
+  "static/css/main.a76d42b3.chunk.css.map": "/google-redesign/static/css/main.a76d42b3.chunk.css.map",
+  "index.html": "/google-redesign/index.html",
+  "precache-manifest.5579a1b9b56c57f5bd6e2f6f1519074b.js": "/google-redesign/precache-manifest.5579a1b9b56c57f5bd6e2f6f1519074b.js",
+  "service-worker.js": "/google-redesign/service-worker.js"
 }
