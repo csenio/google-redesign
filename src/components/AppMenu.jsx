@@ -15,6 +15,7 @@ class AppMenu extends Component {
         className="appmenu__container"
       >
         <div className="appmenu">
+          <div class="speech-bubble-ds-arrow" />
           <a target="blank" href="https://news.google.com/">
             <div>
               <img

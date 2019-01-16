@@ -3,6 +3,7 @@ import Loader from "./components/Loader";
 import "./app.css";
 import Nav from "./components/Nav";
 import AppMenu from "./components/AppMenu";
+import SearchResults from "./components/SearchResults";
 
 class App extends Component {
   constructor(props) {
@@ -14,6 +15,10 @@ class App extends Component {
       appmenuIsOpen: false
     };
   }
+
+  logotoText = () => {
+    this.setState({ animation: "", textareaSelected: false });
+  };
 
   closeAppMenu = () => {
     this.setState({ appmenuIsOpen: false });
@@ -47,7 +52,8 @@ class App extends Component {
       handlefocus,
       search,
       closeAppMenu,
-      openAppMenu
+      openAppMenu,
+      logotoText
     } = this;
     return (
       <div className="App">
@@ -57,13 +63,18 @@ class App extends Component {
         <Nav openAppMenu={openAppMenu} />
         <div className={`midsection ${state.search}`}>
           <div className="midsection__title">
-            <Title hidden={state.textareaSelected} />
+            <Title search={this.state.search} hidden={state.textareaSelected} />
             <Loader
               animation={state.animation}
               hidden={!state.textareaSelected}
             />
           </div>
           <input
+            onKeyDown={e => {
+              if (e.key === "Enter") {
+                this.search();
+              }
+            }}
             type="text"
             className="searchbar"
             onFocus={handlefocus}
@@ -84,6 +95,9 @@ class App extends Component {
             Search
           </button>
         </div>
+        {this.state.search === "searching" && (
+          <SearchResults logotoText={logotoText} query={state.query} />
+        )}
       </div>
     );
   }
@@ -96,7 +110,7 @@ class Title extends Component {
   }
   render() {
     return (
-      <h1 className={`title hidden--${this.props.hidden}`}>
+      <h1 className={`title ${this.props.search} hidden--${this.props.hidden}`}>
         <span className="cblue">G</span>
         <span className="cred">o</span>
         <span className="cyellow">o</span>

@@ -213,6 +213,9 @@
     font-size: 1em;
     padding: 0 20px;
     box-sizing: border-box;
+    @media only screen and (max-width: 515px) {
+        width: 300px;
+    }
 }
 
 .searchbar:active,
@@ -229,7 +232,7 @@
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 7%;
-    transition: all 0.3s;
+    transition: all 0.9s;
 }
 
 .midsection__title {
@@ -320,13 +323,12 @@
 }
 
 .appmenu {
-    z-index: 200;
-    box-shadow: 2px 2px 6px 0 rgba(175, 175, 175, 0.16);
+    z-index: 200; // box-shadow: 2px 2px 6px 0 rgba(175, 175, 175, 0.16);
     position: absolute;
     top: 80px;
     right: 50px;
     background-color: white;
-    border: 1px solid #e3e3e3;
+    border: 1px solid #eeeeee;
     border-radius: 5px;
     width: 250px;
     height: 300px;
@@ -358,6 +360,14 @@
     }
 }
 
+.appmenu:after {
+    top: -13px;
+    bottom: auto;
+    left: auto;
+    right: 47px;
+    border-width: 0 13px 13px;
+}
+
 .appmenu__container {
     z-index: 1;
     height: 100vh;
@@ -371,5 +381,94 @@
     z-index: 10;
     margin-bottom: auto;
     flex-direction: row;
-    height: 80px; // transition: all 2s linear 0.1s;
+    height: 12vh; // transition: all 2s linear 0.1s;
+}
+
+.search-results {
+    height: 85vh;
+}
+
+.search__item__title {
+    font-size: 1em;
+    line-height: 1em;
+    a {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.search__item__title a:hover {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.text {
+    font-size: 0.8em;
+    margin: 0.5em 0 2em 1em;
+}
+
+.url {
+    color: darkgreen;
+    font-size: 0.9em;
+    margin: 0 0.5em;
+}
+
+.search-item {
+    width: 50%; // animation: moveIn 2s forwards;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateX(-500px);
+        opactity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opactity: 1;
+    }
+}
+
+.search-results {
+    ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+.searching {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.inload {
+    h1 {
+        color: lightgray;
+        background-color: lightgray;
+        width: 200px;
+    }
+    h2 {
+        color: lightgray;
+        background-color: lightgray;
+        width: 200px;
+        a {
+            color: lightgray;
+        }
+    }
+    >a {
+        color: rgb(233, 233, 233);
+        background-color: rgb(233, 233, 233);
+        width: 180px;
+    }
+    .text {
+        color: rgb(241, 241, 241);
+        background-color: rgb(241, 241, 241);
+    }
 }

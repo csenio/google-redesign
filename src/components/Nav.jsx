@@ -10,7 +10,7 @@ class Nav extends Component {
       <nav className="nav">
         <ul>
           <li className="navitem settings">
-            <i class="fas fa-cog" />
+            <i className="fas fa-cog" />
           </li>
           <li className="navitem platforms">
             <div className="icon">
