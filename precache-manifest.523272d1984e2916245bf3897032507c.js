@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "44d4ff8b0dd5122bf739",
-    "url": "/google-redesign/static/css/main.a76d42b3.chunk.css"
+    "revision": "68c2bf6d9bf13796d20d",
+    "url": "/google-redesign/static/css/main.eff6a551.chunk.css"
   },
   {
-    "revision": "44d4ff8b0dd5122bf739",
-    "url": "/google-redesign/static/js/main.44d4ff8b.chunk.js"
+    "revision": "68c2bf6d9bf13796d20d",
+    "url": "/google-redesign/static/js/main.68c2bf6d.chunk.js"
   },
   {
     "revision": "f03e8ae863144a61c620",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/google-redesign/static/media/Product Sans Regular.eae9c18c.ttf"
   },
   {
-    "revision": "335ead4d161156fbb62a2dad5fc2cbc5",
+    "revision": "8a750cf35b9369bdf2e594116c550f5a",
     "url": "/google-redesign/index.html"
   }
 ];
