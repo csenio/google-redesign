@@ -1,7 +1,7 @@
 {
   "main.css": "/google-redesign/static/css/main.eff6a551.chunk.css",
-  "main.js": "/google-redesign/static/js/main.68c2bf6d.chunk.js",
-  "main.js.map": "/google-redesign/static/js/main.68c2bf6d.chunk.js.map",
+  "main.js": "/google-redesign/static/js/main.4bf88dc4.chunk.js",
+  "main.js.map": "/google-redesign/static/js/main.4bf88dc4.chunk.js.map",
   "static/js/1.f03e8ae8.chunk.js": "/google-redesign/static/js/1.f03e8ae8.chunk.js",
   "static/js/1.f03e8ae8.chunk.js.map": "/google-redesign/static/js/1.f03e8ae8.chunk.js.map",
   "runtime~main.js": "/google-redesign/static/js/runtime~main.247a4143.js",
@@ -9,6 +9,6 @@
   "static/media/app.css": "/google-redesign/static/media/Product Sans Regular.eae9c18c.ttf",
   "static/css/main.eff6a551.chunk.css.map": "/google-redesign/static/css/main.eff6a551.chunk.css.map",
   "index.html": "/google-redesign/index.html",
-  "precache-manifest.523272d1984e2916245bf3897032507c.js": "/google-redesign/precache-manifest.523272d1984e2916245bf3897032507c.js",
+  "precache-manifest.2ee505f1d55f525a3faed238be7c996b.js": "/google-redesign/precache-manifest.2ee505f1d55f525a3faed238be7c996b.js",
   "service-worker.js": "/google-redesign/service-worker.js"
 }
